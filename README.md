@@ -6,6 +6,9 @@
 This program uses [https://github.com/whoisjake/gomotion/](https://github.com/whoisjake/gomotion/) for parsing frames into Go structs and reading frames from the default LeapMotion websocket.
 <br>
 
+<br>
+This project was originally an idea by [@lemonzi](https://github.com/lemonzi)
+<br>
 The HandPinchRouter reads frames and emits Pinch object pointers which contain the point at which the pinch event occurred and the hand id that created it.<br><br>
 
 A pinch event is sent under the following conditions:
