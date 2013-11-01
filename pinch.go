@@ -40,15 +40,15 @@ func Debug(msg string) {
 }
 
 
-// MyPointable holds a circular buffer of
+// MyPointable holds a circular buffer of Pointable objects
 type MyPointable struct {
 	History *circbuf.Circ
 	lastUpdate time.Time
 }
 
-// calculateConvergence takes 2 MyPointable objects and calculates
-// the difference between the last 15 points between each of the
-// 2 points given.
+// calculateConvergence takes a MyPointable object and calculates
+// the difference between the last number of respective 
+// pointable object coordinates.
 func (mp *MyPointable) CalculateConvergence(p *MyPointable) bool {
 	// get last point data to confirm if the points converging.
 	var myA interface{}
